@@ -1,0 +1,203 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local AdminLauncher = Instance.new("TextButton")
+local Illumina = Instance.new("TextButton")
+local InfluencerLauncher = Instance.new("TextButton")
+local Darkheart = Instance.new("TextButton")
+local Venomshank = Instance.new("TextButton")
+local Ghostwalker = Instance.new("TextButton")
+local Windforce = Instance.new("TextButton")
+local SqueakyHammer = Instance.new("TextButton")
+local IceDagger = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 108, 52)
+Frame.Position = UDim2.new(0.222660989, 0, 0.193258181, 0)
+Frame.Size = UDim2.new(0, 561, 0, 410)
+Frame.Visible = false
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(76, 0, 115)
+TextLabel.Position = UDim2.new(0, 0, -0.0171424858, 0)
+TextLabel.Size = UDim2.new(0, 561, 0, 26)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Epic hub"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 20.000
+
+AdminLauncher.Name = "Admin Launcher"
+AdminLauncher.Parent = Frame
+AdminLauncher.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+AdminLauncher.Position = UDim2.new(0.0213903747, 0, 0.192837462, 0)
+AdminLauncher.Size = UDim2.new(0, 200, 0, 50)
+AdminLauncher.Font = Enum.Font.SourceSans
+AdminLauncher.Text = "Admin Launcher"
+AdminLauncher.TextColor3 = Color3.fromRGB(0, 0, 0)
+AdminLauncher.TextSize = 14.000
+AdminLauncher.MouseButton1Down:connect(function()
+	for b,b in pairs(game.ReplicatedStorage.Levels:GetChildren())do b.Value="Admin Launcher"end game:GetService("ReplicatedStorage").Events.KillMe:FireServer()
+end)
+
+Illumina.Name = "Illumina"
+Illumina.Parent = Frame
+Illumina.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+Illumina.Position = UDim2.new(0.0213903859, 0, 0.363636374, 0)
+Illumina.Size = UDim2.new(0, 200, 0, 50)
+Illumina.Font = Enum.Font.SourceSans
+Illumina.Text = "Illumina"
+Illumina.TextColor3 = Color3.fromRGB(0, 0, 0)
+Illumina.TextSize = 14.000
+Illumina.MouseButton1Down:connect(function()
+	for b,b in pairs(game.ReplicatedStorage.Levels:GetChildren())do b.Value="Illumina"end game:GetService("ReplicatedStorage").Events.KillMe:FireServer()
+end)
+
+
+InfluencerLauncher.Name = "Influencer Launcher"
+InfluencerLauncher.Parent = Frame
+InfluencerLauncher.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+InfluencerLauncher.Position = UDim2.new(0.434937626, 0, 0.192837462, 0)
+InfluencerLauncher.Size = UDim2.new(0, 200, 0, 50)
+InfluencerLauncher.Font = Enum.Font.SourceSans
+InfluencerLauncher.Text = "Influencer Launcher"
+InfluencerLauncher.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfluencerLauncher.TextSize = 14.000
+InfluencerLauncher.MouseButton1Down:connect(function()
+	for b,b in pairs(game.ReplicatedStorage.Levels:GetChildren())do b.Value="Influencer Launcher"end game:GetService("ReplicatedStorage").Events.KillMe:FireServer()
+end)
+
+Darkheart.Name = "Darkheart"
+Darkheart.Parent = Frame
+Darkheart.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+Darkheart.Position = UDim2.new(0.434937626, 0, 0.363636374, 0)
+Darkheart.Size = UDim2.new(0, 200, 0, 50)
+Darkheart.Font = Enum.Font.SourceSans
+Darkheart.Text = "Darkheart"
+Darkheart.TextColor3 = Color3.fromRGB(0, 0, 0)
+Darkheart.TextSize = 14.000
+Darkheart.MouseButton1Down:connect(function()
+	for b,b in pairs(game.ReplicatedStorage.Levels:GetChildren())do b.Value="Darkheart"end game:GetService("ReplicatedStorage").Events.KillMe:FireServer()
+end)
+
+Venomshank.Name = "Venomshank"
+Venomshank.Parent = Frame
+Venomshank.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+Venomshank.Position = UDim2.new(0.0213903785, 0, 0.556473851, 0)
+Venomshank.Size = UDim2.new(0, 200, 0, 50)
+Venomshank.Font = Enum.Font.SourceSans
+Venomshank.Text = "Venomshank"
+Venomshank.TextColor3 = Color3.fromRGB(0, 0, 0)
+Venomshank.TextSize = 14.000
+Venomshank.MouseButton1Down:connect(function()
+	for b,b in pairs(game.ReplicatedStorage.Levels:GetChildren())do b.Value="Venomshank"end game:GetService("ReplicatedStorage").Events.KillMe:FireServer()
+end)
+
+Ghostwalker.Name = "Ghostwalker"
+Ghostwalker.Parent = Frame
+Ghostwalker.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+Ghostwalker.Position = UDim2.new(0.434937626, 0, 0.556473851, 0)
+Ghostwalker.Size = UDim2.new(0, 200, 0, 50)
+Ghostwalker.Font = Enum.Font.SourceSans
+Ghostwalker.Text = "Ghostwalker"
+Ghostwalker.TextColor3 = Color3.fromRGB(0, 0, 0)
+Ghostwalker.TextSize = 14.000
+Ghostwalker.MouseButton1Down:connect(function()
+	for b,b in pairs(game.ReplicatedStorage.Levels:GetChildren())do b.Value="Ghostwalker"end game:GetService("ReplicatedStorage").Events.KillMe:FireServer()
+end)
+
+Windforce.Name = "Windforce"
+Windforce.Parent = Frame
+Windforce.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+Windforce.Position = UDim2.new(0.0213903785, 0, 0.732782364, 0)
+Windforce.Size = UDim2.new(0, 200, 0, 50)
+Windforce.Font = Enum.Font.SourceSans
+Windforce.Text = "Windforce"
+Windforce.TextColor3 = Color3.fromRGB(0, 0, 0)
+Windforce.TextSize = 14.000
+Windforce.MouseButton1Down:connect(function()
+	for b,b in pairs(game.ReplicatedStorage.Levels:GetChildren())do b.Value="Windforce"end game:GetService("ReplicatedStorage").Events.KillMe:FireServer()
+end)
+
+SqueakyHammer.Name = "Squeaky Hammer"
+SqueakyHammer.Parent = Frame
+SqueakyHammer.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+SqueakyHammer.Position = UDim2.new(0.434937626, 0, 0.732782364, 0)
+SqueakyHammer.Size = UDim2.new(0, 200, 0, 50)
+SqueakyHammer.Font = Enum.Font.SourceSans
+SqueakyHammer.Text = "Squeaky Hammer"
+SqueakyHammer.TextColor3 = Color3.fromRGB(0, 0, 0)
+SqueakyHammer.TextSize = 14.000
+SqueakyHammer.MouseButton1Down:connect(function()
+	for b,b in pairs(game.ReplicatedStorage.Levels:GetChildren())do b.Value="Squeaky Hammer"end game:GetService("ReplicatedStorage").Events.KillMe:FireServer()
+end)
+
+IceDagger.Name = "Ice Dagger"
+IceDagger.Parent = Frame
+IceDagger.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+IceDagger.Position = UDim2.new(0.28877005, 0, 0.875878334, 0)
+IceDagger.Size = UDim2.new(0, 200, 0, 50)
+IceDagger.Font = Enum.Font.SourceSans
+IceDagger.Text = "Ice Dagger"
+IceDagger.TextColor3 = Color3.fromRGB(0, 0, 0)
+IceDagger.TextSize = 14.000
+IceDagger.MouseButton1Down:connect(function()
+	for b,b in pairs(game.ReplicatedStorage.Levels:GetChildren())do b.Value="Ice Dagger"end game:GetService("ReplicatedStorage").Events.KillMe:FireServer()
+end)
+
+
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Close.Position = UDim2.new(0.946524084, 0, -0.0171424858, 0)
+Close.Size = UDim2.new(0, 30, 0, 25)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 14.000
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(92, 0, 138)
+Open.Position = UDim2.new(0, 0, 0.437383175, 0)
+Open.Size = UDim2.new(0, 72, 0, 50)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextSize = 14.000
+
+-- Scripts:
+
+local function XCRL_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	local Frame = script.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+	
+end
+coroutine.wrap(XCRL_fake_script)()
+local function DNONBUT_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	local Frame = script.Parent.Parent.Frame
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = true
+	end)
+	
+end
+coroutine.wrap(DNONBUT_fake_script)()
